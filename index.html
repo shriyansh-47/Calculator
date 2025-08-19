@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web - Calculator</title>
+    <link id="colour" rel="stylesheet" href="styleColour.css" />
+    <link id="light" rel="stylesheet" href="styleLight.css" disabled />
+    <link id="dark" rel="stylesheet" href="styleDark.css" disabled />
+  </head>
+
+  <body>
+    <h1>Calculator</h1>
+    <div class="main">
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="4">
+              <input type="text" class="ip" readonly />
+              <!-- <p class="ip">0</p> -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="clearall" onclick="clearEntry()">CE</button>
+            </td>
+            <td>
+              <button class="clear" onclick="clearAll()">C</button>
+            </td>
+            <td>
+              <button class="erase" onclick="erase()">&#9003;</button>
+            </td>
+            <td>
+              <button class="D" onclick="display('/')">&#247;</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="seven" onclick="display('7')">7</button>
+            </td>
+            <td>
+              <button class="eight" onclick="display('8')">8</button>
+            </td>
+            <td>
+              <button class="nine" onclick="display('9')">9</button>
+            </td>
+            <td>
+              <button class="M" onclick="display('x')">&#215;</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="four" onclick="display('4')">4</button>
+            </td>
+            <td>
+              <button class="five" onclick="display('5')">5</button>
+            </td>
+            <td>
+              <button class="six" onclick="display('6')">6</button>
+            </td>
+            <td>
+              <button class="S" onclick="display('-')">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="one" onclick="display('1')">1</button>
+            </td>
+            <td>
+              <button class="two" onclick="display('2')">2</button>
+            </td>
+            <td>
+              <button class="three" onclick="display('3')">3</button>
+            </td>
+            <td>
+              <button class="A" onclick="display('+')">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="AorS">&pm;</button>
+            </td>
+            <td>
+              <button class="zero" onclick="display('0')">0</button>
+            </td>
+            <td>
+              <button class="decimal" onclick="display('.')">.</button>
+            </td>
+            <td>
+              <button class="equal" onclick="calculate()">=</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <span
+      ><a href="https://www.linkedin.com/in/shriyansh-yadav-7097b4349"
+        >@ Shriyansh_47</a
+      ></span
+    >
+
+    <div class="themes">
+      <button class="theme_btn" onclick="theme_change()">Toggle Themes</button>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
